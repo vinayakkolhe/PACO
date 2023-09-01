@@ -1,0 +1,20 @@
+<header id="header" class="fixed-top d-flex align-items-center" #header>
+    <div class="container d-flex justify-content-between align-items-center">
+  
+      <div class="logo">
+        <h1><a href="index.html">PACO</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+  
+      <nav id="navbar" class="navbar" #navbar>
+        <ul>
+          <li><a routerLink="products" [ngClass]="{'active' : isActiveRoute('/products')}" (click)="onNavMenuClick()">Products</a></li>
+          <li><a routerLink="aboutUs" [ngClass]="{'active' : isActiveRoute('/aboutUs')}" (click)="onNavMenuClick()">About</a></li>
+          <li><a routerLink="contact" [ngClass]="{'active' : isActiveRoute('/contact')}" (click)="onNavMenuClick()">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle" #closeMenu (click)="onNavExpandClick()"></i>
+      </nav><!-- .navbar -->
+  
+    </div>
+  </header>

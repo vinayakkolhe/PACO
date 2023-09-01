@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+html {
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    color: #9fa1a4;
+    line-height: 1.5;
+  }
+  
+  section{
+    margin-top: 60px;
+}
+
+  a {
+    color: #777;
+    text-decoration: none;
+    transition: 0.3s all ease;
+  }
+  
+  a:hover {
+    color: #000;
+  }
+  
+  
+  /* Default btn sre-tyling */
+  .btn {
+    border: none;
+    padding: 15px 30px !important;
+  }
+  
+  .btn.btn-outline-white {
+    border: 2px solid #fff;
+    background: none;
+    color: #fff;
+  }
+  
+  .btn.btn-outline-white:hover {
+    background: #fff;
+    color: #2d71a1;
+  }
+  
+  .btn.btn-primary {
+    background: #2d71a1;
+    background: linear-gradient(-45deg, #1391a5, #274685);
+    color: #fff;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+  }
+  
