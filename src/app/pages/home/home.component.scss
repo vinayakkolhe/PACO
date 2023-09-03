@@ -3,15 +3,23 @@
   # Hero Section
   --------------------------------------------------------------*/
   .hero-section {
+    z-index: -2;
     background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.8) 100%), url("../../../assets/img/hero-bg.jpg");
     position: relative;
   }
   
+  .wave{
+    z-index: -1;
+  }
+  .next-wave{
+    z-index: 1;
+  }
+
   .hero-section .wave {
     width: 100%;
     overflow: hidden;
     position: absolute;
-    z-index: 1;
+    // z-index: 1;
     bottom: -150px;
   }
   
@@ -174,6 +182,9 @@
 --------------------------------------------------------------*/
 .why-us .content {
   padding: 60px 100px 0 100px;
+}
+.why-us ul a{
+  color: #343a40;
 }
 
 .why-us .content h3 {
