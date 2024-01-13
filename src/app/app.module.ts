@@ -11,6 +11,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ProductsComponent } from './pages/products/products.component';
 
 import {register} from 'swiper/element/bundle';
+import { ReactiveFormsModule } from '@angular/forms';
 register();
 
 @NgModule({
@@ -25,7 +26,8 @@ register();
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
