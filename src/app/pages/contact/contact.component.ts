@@ -22,9 +22,9 @@ export class ContactComponent {
 
 public send(){
   emailjs.send('service_mlrh7jk','template_sxx3h27', this.EmailForm.getRawValue(), 'h43h2O7s95hnICGfF')
-	.then((response) => {	   
+	.then((response:any) => {	   
     alert("Thanks, Your inquiry has been sent");
-	}, (err) => {
+	}, (err:any) => {
 	   console.log('FAILED...', err);
 	});
 }
