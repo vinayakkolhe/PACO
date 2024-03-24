@@ -1,50 +1,38 @@
 <!-- ======= On Focus Section ======= -->
-<section id="onfocus" class="onfocus video-container">
+<section id="onfocus" class="onfocus">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{Product?.Prop?.Name}}</h2>
+    </div>
     
-    <div class="container-fluid">
+    <div class="row gy-4">
 
-      <div class="row g-0">
-        <div class="col-lg-6 video-play">
-            <div class="video-container m-2">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/XbGsJoivUw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <!-- <embed src="https://www.youtube.com/embed/XbGsJoivUw8"> -->
-        </div>
-
-        <div class="col-lg-6">
-          <div class="content d-flex flex-column justify-content-center m-2">
-            <h3>LinkUp Conveyor</h3>
-            <p class="fst-italic">
-              This can be used as linkup conveyor.
-            </p>
-          </div>
+      <div class="col-lg-7">
+        <div class="video-container m-2">
+          <iframe [src]="Product?.Prop?.IFrame" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <!-- <iframe src="https://www.youtube.com/embed/ijKf4yx5a7g?si=vM1SECYYCwmgxbH2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/XbGsJoivUw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         </div>
       </div>
 
-    </div>
-  </section><!-- End On Focus Section -->
-  <!-- ======= Screenshots Section ======= -->
-  <section id="screenshots" class="padd-section text-center">
-
-    <div class="container" data-aos="fade-up">
-      <div class="section-title text-center">
-        <h2>App Gallery</h2>
-        <p class="separator">Integer cursus bibendum augue ac cursus .</p>
-      </div>
-
-      <div class="screens-slider swiper">
-        <div class="swiper-wrapper align-items-center">
-          <div class="swiper-slide"><img src="../../../assets/img/products/1.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="../../../assets/img/products/2.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="../../../assets/img/products/3.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="../../../assets/img/products/4.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="../../../assets/img/products/5.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="../../../assets/img/products/6.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="../../../assets/img/products/7.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="../../../assets/img/products/8.jpg" class="img-fluid" alt=""></div>
+      <div class="col-lg-5">
+        <div class="portfolio-info">
+          <ul>
+            <li>Carton Collator Machine brochure : <a [href]="Product?.Prop?.BoucherLink">link</a></li>
+          </ul>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="portfolio-description">
+          <swiper-container
+          effect="cube" grab-cursor="true" speed="1000" 
+          autoplay-delay="1000" loop="true" pagination="true" pagination-clickable="true">
+          <ng-container *ngFor="let imageSrc of Product?.Prop?.Images">
+            <swiper-slide>
+              <img [src]="imageSrc" alt="">
+            </swiper-slide>
+          </ng-container>
+          </swiper-container>
+        </div>
       </div>
     </div>
-
-  </section><!-- End Screenshots Section -->
+  </div>
+</section>

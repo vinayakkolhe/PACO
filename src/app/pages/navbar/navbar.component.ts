@@ -1,6 +1,7 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { filter } from "rxjs";
+import { Product, ProductsServics } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,8 +10,14 @@ import { filter } from "rxjs";
 })
 export class NavbarComponent {
 
+  public ProductList : Product[]
+
   constructor(private router:Router,
-    private activatedRoute:ActivatedRoute){
+    private activatedRoute:ActivatedRoute,
+    private productService: ProductsServics){
+    
+      this.ProductList = productService.ProductList
+
     this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe((e:any)=>{
       this.activeRoute = e.url
       if(e.url == "/" || e.url == "") this.isHomePage = true

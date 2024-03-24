@@ -10,9 +10,25 @@
       <nav id="navbar" class="navbar" #navbar>
         <ul>
           <li><a routerLink="" [ngClass]="{'active' : isActiveRoute('/')}" (click)="onNavMenuClick()">Home</a></li>
-          <!-- <li><a routerLink="products" [ngClass]="{'active' : isActiveRoute('/products')}" (click)="onNavMenuClick()">Products</a></li> -->
+          <li class="dropdown"><a><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <ng-container *ngFor="let product of ProductList">
+                <a [routerLink]="'products/product/'+product.Id">{{product.Prop.Name}}</a>
+              </ng-container>
+              <!-- <li class="dropdown"><a href="#"><span>Some other products</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Product 1</a></li>
+                  <li><a href="#">Product 2</a></li>
+                  <li><a href="#">Product 3</a></li>
+                  <li><a href="#">Product 4</a></li>
+                  <li><a href="#">Product 5</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </li>
           <li><a routerLink="aboutUs" [ngClass]="{'active' : isActiveRoute('/aboutUs')}" (click)="onNavMenuClick()">About</a></li>
           <li><a routerLink="contact" [ngClass]="{'active' : isActiveRoute('/contact')}" (click)="onNavMenuClick()">Contact</a></li>
+          
         </ul>
         <i class="bi bi-list mobile-nav-toggle" #closeMenu (click)="onNavExpandClick()"></i>
       </nav><!-- .navbar -->
