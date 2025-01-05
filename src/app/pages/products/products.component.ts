@@ -9,10 +9,14 @@ import { Product, ProductsServics } from 'src/app/services/products.service';
 })
 export class ProductsComponent {
   constructor(activatedRoute: ActivatedRoute, productService:ProductsServics) {
-    var courseId = activatedRoute.snapshot.params["id"];
-    this.Product = productService.getProductDetails("CARTON-COLLATOR-MACHINE");
-    console.log(courseId)
-    console.log(this.Product)
+    // var courseId = activatedRoute.snapshot.params["id"];
+    // this.Product = productService.getProductDetails(courseId);
+
+    activatedRoute.paramMap.subscribe(param=>{
+      var courseId = activatedRoute.snapshot.params["id"];
+      this.Product = productService.getProductDetails(courseId);
+
+    })
   }
 
   public Product?: Product
