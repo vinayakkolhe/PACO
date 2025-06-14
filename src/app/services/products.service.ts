@@ -37,8 +37,8 @@ export class ProductsServics{
 
              new Product("DEBLISTERING-MACHINE",
                 new Prop("DEBLISTERING / DEFOILING MACHINE", this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/vbZ7fwVKSYo?si=sxnznm4vFcuc5sID"),
-                "assets/img/products/DEBLISTERING-MACHINE.jpg", 
-                ["assets/img/products/DEBLISTERING-MACHINE.jpg"],
+                "assets/img/products/DEBLISTERING-MACHINE.png", 
+                ["assets/img/products/DEBLISTERING-MACHINE.png"],
                 "https://drive.google.com/file/d/1NPpT1FImBkoC4LqsKtK_yMgMsauztEDR/view?usp=sharing")), 
             
         ]        
