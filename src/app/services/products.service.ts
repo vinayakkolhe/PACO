@@ -21,7 +21,25 @@ export class ProductsServics{
                 new Prop("BLISTER CARTON LINKUP CONVEYOR", this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/w4haINbKXkU?si=xjloe1zOM92FnYPA"),
                 "assets/img/products/BLISTER-CARTON-LINKUP-CONVEYOR.jpg", 
                 ["assets/img/products/BLISTER-CARTON-LINKUP-CONVEYOR.jpg", "assets/img/products/BLISTER-CARTON-LINKUP-CONVEYOR.jpg","assets/img/products/BLISTER-CARTON-LINKUP-CONVEYOR.jpg"],
-                "https://drive.google.com/file/d/1my3V8g5fx4xBQ4VFv4atGppwfWfKDewV/view?usp=sharing")),    
+                "https://drive.google.com/file/d/1my3V8g5fx4xBQ4VFv4atGppwfWfKDewV/view?usp=sharing")),   
+                
+            new Product("UNIVERSAL-BLISTER-COLLETOR-WITH-MANUAL-PACKING-SYSTEM",
+                new Prop("UNIVERSAL BLISTER COLLETOR WITH MANUAL PACKING SYSTEM", this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/9MKvTWGYBW4?si=loqbE40ohsnJY32K"),
+                "assets/img/products/UNIVERSAL-BLISTER-COLLETOR-WITH-MANUAL-PACKING-SYSTEM.png", 
+                ["assets/img/products/UNIVERSAL-BLISTER-COLLETOR-WITH-MANUAL-PACKING-SYSTEM.png"],
+                "https://drive.google.com/file/d/143U-pIXX-a8YWKSDumJyf6Tfdb6xzkgr/view?usp=sharing")), 
+                  
+            new Product("SWING-CONVEYOR",
+                new Prop("SWING CONVEYOR", this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/5r62YvQH6-A?si=98ZaGuNWNRqpqaOH"),
+                "assets/img/products/SWING-CONVEYOR.png", 
+                ["assets/img/products/SWING-CONVEYOR.png"],
+                "https://drive.google.com/file/d/1TPtnmNZKa2tFN1G0fa9yHi5mQlYGin9J/view?usp=sharing")), 
+
+             new Product("DEBLISTERING-MACHINE",
+                new Prop("DEBLISTERING / DEFOILING MACHINE", this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/vbZ7fwVKSYo?si=sxnznm4vFcuc5sID"),
+                "assets/img/products/DEBLISTERING-MACHINE.jpg", 
+                ["assets/img/products/DEBLISTERING-MACHINE.jpg"],
+                "https://drive.google.com/file/d/1NPpT1FImBkoC4LqsKtK_yMgMsauztEDR/view?usp=sharing")), 
             
         ]        
     }
