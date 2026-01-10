@@ -11,6 +11,12 @@ export class ProductsServics{
      */
     constructor(private sanitizer: DomSanitizer) {
         this.ProductList = [
+            new Product("ONLINE-BANDING-MACHINE",
+                new Prop("ONLINE BANDING MACHINE", this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/VjtbkEpr3jg?si=rE5a4Pw0EwKQ5jG9"),
+                "assets/img/products/ONLINE-BANDING-MACHINE.png", 
+                ["assets/img/products/ONLINE-BANDING-MACHINE.png"],
+                "https://drive.google.com/file/d/16EYOxfRa5KrSt8zht_ZLwazwbdhWTRsh/view?usp=sharing")), 
+
             new Product("CARTON-COLLATOR-MACHINE",
                 new Prop("CARTON COLLATOR MACHINE", this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/ijKf4yx5a7g?si=vM1SECYYCwmgxbH2"),
                 "assets/img/products/Carton_Collator_Machine1.jpg",
@@ -40,6 +46,18 @@ export class ProductsServics{
                 "assets/img/products/DEBLISTERING-MACHINE.png", 
                 ["assets/img/products/DEBLISTERING-MACHINE.png"],
                 "https://drive.google.com/file/d/1NPpT1FImBkoC4LqsKtK_yMgMsauztEDR/view?usp=sharing")), 
+            
+            new Product("VIAL-VISUAL-INSPECTION-MACHINE",
+                new Prop("VIAL VISUAL INSPECTION MACHINE", this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/xTKzM8FHTPM?si=N4IAaOwPYIIq_v3H"),
+                "assets/img/products/VIAL-VISUAL-INSPECTION-MACHINE.png", 
+                ["assets/img/products/VIAL-VISUAL-INSPECTION-MACHINE.png"],
+                "https://drive.google.com/file/d/1Rf8bvtVQauhz8525K0ps4kmjpP6A1NNE/view?usp=sharing")), 
+
+            new Product("TWO-IN-ONE-GSM-SAMPLE-CUTTER",
+                new Prop("TWO IN ONE GSM SAMPLE CUTTER", this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/jT1GTzmnqcE?si=QLdMbOXgkAfoqLbZ"),
+                "assets/img/products/TWO-IN-ONE-GSM-SAMPLE-CUTTER.png", 
+                ["assets/img/products/TWO-IN-ONE-GSM-SAMPLE-CUTTER.png"],
+                "https://drive.google.com/file/d/1t4lN7l4F7DAtf3hM1CFbGpY4UdCGS9sz/view?usp=sharing")),
             
         ]        
     }
